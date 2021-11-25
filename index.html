@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="shortcut icon" type="ico" href="images/add-user.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comforter&family=Merriweather&family=Montserrat:wght@100&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+<form>
+    <div id="form">
+        <div>
+            <h1 id="heading">Sign Up Page</h1>
+            <img src="images/signup.png" style="position: inline;  padding-left: 220px;" height="60" width="60" alt="">
+        </div>
+
+
+        <hr>
+
+        <label for="">Email</label><br>
+        <input type="email" size="68" class="text" placeholder="Enter Email"><br><br>
+
+        <label for="">User Name</label><br>
+        <input type="text" size="68" class="text" placeholder="Enter Username" 
+            title="Please enter your username " required title="Please enter username">
+
+        <br><br>
+
+        <label for="">Password</label><br>
+        <input type="password" size="68" onkeydown="pass(this)" id="password" class="text" placeholder="Enter Password" required>
+        <error style="color:red; font-weight: bolder;" id="size"></error>
+
+
+
+        <br>
+        <label for="">Confirm Password</label><br>
+        <input type="password" size="68" onkeyup="check(this)" placeholder="Enter Confirm Password" required><br>
+        <error style="color: red; font-weight: bolder;" id="alert"></error>
+        <input type="submit" id="btn" value="SUBMIT" style="margin-left: 200px;">
+
+    </div>
+</form>
+    <div>
+        <p style="text-align: center; color:white">Dhairya Parikh ©</p>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    var password = document.getElementById('password');
+
+    function pass() {
+
+        if (password.value.length < 5)
+            document.getElementById('size').innerText = "Password size should be atleast 6 characters";
+        else
+            document.getElementById('size').innerText = "";
+
+
+    }
+    function check(element) {
+
+       
+
+        if (element.value != password.value) {
+
+            document.getElementById('alert').innerText = "Confirm Password Doesn't Match with the Password";
+        }
+        else {
+            document.getElementById('alert').innerText = "";
+
+        }
+    }
+</script>
+
+</html>
+
+
+

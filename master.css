@@ -1,0 +1,81 @@
+body{
+    background-color:#394867;
+    font-family: 'Pacifico', cursive;
+    overflow: hidden;
+}
+
+
+
+#heading{
+   
+    margin-bottom: 10px;    
+    margin-left: 140px;
+    font-family: 'Cedarville Cursive', cursive;
+    
+}
+
+
+#form{
+  
+   border: 10px 10px 10px 10px;
+   background-color: #FBFBFB;
+    height: 620px;
+    width: 502px;
+    margin-top:70px;
+    margin-left: 500px;
+    
+}
+
+#btn{
+    background-color: #1687A7;
+    color:black;
+    width: 100px;
+    font-weight: bolder;
+    margin-top: 40px;
+    border: none;
+   
+}
+
+#btn:hover{
+   
+  
+   
+    background-color: #0F2C67;
+    color:white;
+    
+}
+
+label{
+    font-weight: bold;
+   align-items: center;
+    padding-bottom: 5px;
+  
+  
+  
+}
+
+input{
+
+  
+   background-color: lightgray;
+  border:none;
+   display: inline-block;
+   margin-top: 10px;
+   padding: 10px;
+  
+}
+
+
+
+
+input:hover{
+    background-color: #C9CCD5;
+}
+
+::placeholder{
+
+    color:black;
+    
+}
+
+
